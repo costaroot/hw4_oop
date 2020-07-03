@@ -1,20 +1,22 @@
 package com.costaroot.shapes;
 
-import com.costaroot.vertex.Vertex;
-
 import java.util.List;
 
 public abstract class Shape {
-    private final List<Vertex> vertices;
+    private final List vertices;
     private final String name;
 
-    public Shape(List<Vertex> vertices, String name) {
+    public Shape(List vertices, String name) {
         this.vertices = vertices;
         this.name = name;
     }
 
     public String getName() {
         return name;
+    }
+
+    public List getVertices() {
+        return vertices;
     }
 
     @Override

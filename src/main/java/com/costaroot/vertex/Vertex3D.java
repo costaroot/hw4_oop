@@ -1,7 +1,7 @@
 package com.costaroot.vertex;
 
 public class Vertex3D extends Vertex2D {
-    private double z;
+    private final double z;
 
     public Vertex3D(double x, double y, double z) {
         super(x, y);
@@ -10,6 +10,11 @@ public class Vertex3D extends Vertex2D {
 
     public double getZ() {
         return z;
+    }
+
+    public double getDistance(Vertex3D point) {
+        return Math.sqrt(Math.pow(this.getX() - point.getX(), 2) + Math.pow(this.getY() - point.getY(), 2) -
+                Math.pow(this.z - point.getZ(), 2));
     }
 
     @Override

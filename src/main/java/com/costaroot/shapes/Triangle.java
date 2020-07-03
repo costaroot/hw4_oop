@@ -12,7 +12,7 @@ public class Triangle extends PlaneShape {
 
     @Override
     public double getArea() {
-        List<Vertex2D> list = this.getVertex2D();
+        List<Vertex2D> list = this.getVertices();
         double p;
         p = this.getPerimeter() * 0.5;
         return Math.sqrt(p * (p - list.get(0).getDistance(list.get(1))) *
@@ -22,7 +22,7 @@ public class Triangle extends PlaneShape {
 
     @Override
     public double getPerimeter() {
-        List<Vertex2D> list = this.getVertex2D();
+        List<Vertex2D> list = this.getVertices();
         return list.get(0).getDistance(list.get(1)) + list.get(0).getDistance(list.get(2)) +
                 list.get(1).getDistance(list.get(2));
     }
