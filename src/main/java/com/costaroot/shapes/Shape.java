@@ -1,15 +1,14 @@
 package com.costaroot.shapes;
 
 import com.costaroot.vertex.Vertex;
-import com.costaroot.vertex.Vertex2D;
 
-import java.util.*;
+import java.util.List;
 
 public abstract class Shape {
-    private List <Vertex> vertices;
-    private String name;
+    private final List<Vertex> vertices;
+    private final String name;
 
-    public Shape ( List<Vertex> vertices, String name){
+    public Shape(List<Vertex> vertices, String name) {
         this.vertices = vertices;
         this.name = name;
     }

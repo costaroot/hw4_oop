@@ -1,10 +1,10 @@
 package com.costaroot.vertex;
 
-public class Vertex2D extends Vertex{
+public class Vertex2D extends Vertex {
     private final double x;
     private final double y;
 
-    public Vertex2D(double x, double y){
+    public Vertex2D(double x, double y) {
         this.x = x;
         this.y = y;
     }
@@ -26,6 +26,6 @@ public class Vertex2D extends Vertex{
     }
 
     public double getDistance(Vertex2D point) {
-       return Math.sqrt(Math.pow(this.x- point.getX(),2) + Math.pow(this.y - point.getY(),2));
+        return Math.sqrt(Math.pow(this.x - point.getX(), 2) + Math.pow(this.y - point.getY(), 2));
     }
 }

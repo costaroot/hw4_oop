@@ -5,11 +5,11 @@ import com.costaroot.vertex.Vertex2D;
 import java.util.Arrays;
 
 public class Rectangle extends PlaneShape {
-    private double width;
-    private double height;
+    private final double width;
+    private final double height;
 
-    public Rectangle (Vertex2D vertex2D,String name, double width, double height){
-        super(Arrays.asList(vertex2D),name);
+    public Rectangle(Vertex2D vertex2D, String name, double width, double height) {
+        super(Arrays.asList(vertex2D), name);
         this.width = width;
         this.height = height;
     }
